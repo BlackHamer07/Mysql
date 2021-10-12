@@ -29,3 +29,8 @@
         join customers c on o.customer_id = c.customer_id
         
         join order_statuses os on o.status = os.order_status_id
+  
+  - 물론 다중조인을 하게 되며 서로서로 맞는 컬럼을 결합해야한다. 그렇지 않게 되면 오류 뜨는것은 당연한 결과이다.
+ 
+4. 복합 join
+5. 
