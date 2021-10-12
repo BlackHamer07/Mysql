@@ -22,6 +22,9 @@
   
   - 첫번째로 다중 조인을 하면 join을 몇 번을 쓰는 것과 상관없이 join을 쓰면 된다.
   - -> select *
+  
        from orders o 
+       
         join customers c on o.customer_id = c.customer_id
+        
         join order_statuses os on o.status = os.order_status_id
