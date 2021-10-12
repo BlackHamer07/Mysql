@@ -58,4 +58,19 @@
     - where name REGEXP 'kim$' -> kim으로 끝나는 것을 검색해라
     - where name REGEXP 'kim|Lee' -> kim,Lee의 사람을 검색해라
     - where name REGEXP '^kim|Lee|Sin' -> kim으로 시작하는 사람을 검색, Lee와Sin이 들어가는 이름 검색
-    - where name REGEXP 'kim[skm]' -> kims / kimk / kimm 이렇게 뒤에 오는게 skm인 사람을 검색 대괄호가 앞에도 올 수 있다.
+    - where name REGEXP 'kim[skm]' -> kims / kimk / kimm 이렇게 kim뒤에 오는게 skm인 사람을 검색 대괄호가 앞에도 올 수 있다.
+    - where name REGEXP 'kim[a-h]' -> 위와 마찬가지로 딸려오는 것을 검색하는데 a~h까지 있는 문자중에서 검색해라
+    
+  8. is null / is not nulll
+    
+    
+    - null값은 0인값이 아닌 모르는 값을 나타낸다 (중요)
+    
+    
+  9. Order by
+    
+    
+    - where 구문다음에 쓰인다
+    - order by는 정렬을 할 때 쓰인다.
+    - 내림차순 정렬을 원하면 order by name DESC를 쓴다.
+    - 오른차순 정렬을 하게되면 order by name AES를 쓴다.
