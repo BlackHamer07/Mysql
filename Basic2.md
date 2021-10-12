@@ -21,7 +21,8 @@
 3. multi join (2개 이상의 테이블을 결합할 때)
   
   - 첫번째로 다중 조인을 하면 join을 몇 번을 쓰는 것과 상관없이 join을 쓰면 된다.
-  - ->  select *
+  - ->  
+        select *
   
         from orders o 
        
